@@ -35,7 +35,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="Photographer" />
       </Image>
-      <Wave />
+      <Wave stroke={"#D96ED4"} />
     </About>
   );
 };

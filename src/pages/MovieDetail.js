@@ -4,6 +4,7 @@ import { MovieState } from "../movieState";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";
+import Wave from "../components/Wave";
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -36,6 +37,7 @@ const MovieDetail = () => {
                 key={award.title}
               />
             ))}
+            <Wave stroke={movie.stroke} />
           </Awards>
           <ImageDisplay>
             <img src={movie.secondaryImg} alt="movie" />

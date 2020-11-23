@@ -2,6 +2,10 @@
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
+import neotokyo from "../img/neotokyo.jpg";
+import wild from "../img/wild.jpg";
+import artist from "../img/artist-small.jpg";
+import escape from "../img/escape.jpg";
 
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -23,6 +27,14 @@ const OurWork = () => {
   const [element, controls] = useScroll();
 
   const [element2, controls2] = useScroll();
+
+  const [element3, controls3] = useScroll();
+
+  const [element4, controls4] = useScroll();
+
+  const [element5, controls5] = useScroll();
+
+  const [element6, controls6] = useScroll();
 
   return (
     <Work
@@ -60,11 +72,51 @@ const OurWork = () => {
         </Link>
       </Movie>
       <Movie ref={element2} variants={fade} animate={controls2}>
+        <motion.h2 variants={fade}>Neo Tokyo</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/neo-tokyo">
+          <Hide>
+            <motion.img variants={photoAnim} src={neotokyo} alt="Neo Tokyo" />
+          </Hide>
+        </Link>
+      </Movie>
+
+      <Movie ref={element3} variants={fade} animate={controls3}>
         <motion.h2 variants={fade}>Good Times</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <Hide>
             <motion.img variants={photoAnim} src={goodtimes} alt="Goodtimes" />
+          </Hide>
+        </Link>
+      </Movie>
+
+      <Movie ref={element4} variants={fade} animate={controls4}>
+        <motion.h2 variants={fade}>Into the Wild</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/into-the-wild">
+          <Hide>
+            <motion.img variants={photoAnim} src={wild} alt="Wild" />
+          </Hide>
+        </Link>
+      </Movie>
+
+      <Movie ref={element5} variants={fade} animate={controls5}>
+        <motion.h2 variants={fade}>The Artist</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/the-artist">
+          <Hide>
+            <motion.img variants={photoAnim} src={artist} alt="The Artist" />
+          </Hide>
+        </Link>
+      </Movie>
+
+      <Movie ref={element6} variants={fade} animate={controls6}>
+        <motion.h2 variants={fade}>The Escape</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/the-escape">
+          <Hide>
+            <motion.img variants={photoAnim} src={escape} alt="The Escape" />
           </Hide>
         </Link>
       </Movie>
