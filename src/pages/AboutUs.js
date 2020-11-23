@@ -1,5 +1,5 @@
 import AboutSection from "../components/AboutSection";
-import FaqSection from "../components/Faq";
+import FaqSection from "../components/FaqSection";
 import ServicesSection from "../components/ServicesSection";
 
 import { motion } from "framer-motion";
