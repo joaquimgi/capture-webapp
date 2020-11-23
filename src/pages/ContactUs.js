@@ -8,6 +8,7 @@ const ContactUs = () => {
       initial="hidden"
       animate="show"
       exit="exit"
+      style={{ background: "#fff" }}
     >
       <Title>
         <Hide>
