@@ -17,6 +17,7 @@ import {
 } from "../Animation";
 
 import { useScroll } from "../components/useScroll";
+import ScrollToTop from "../components/ScrollToTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -31,6 +32,8 @@ const OurWork = () => {
       exit="exit"
       style={{ background: "#fff" }}
     >
+      <ScrollToTop />
+
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider} />
         <Frame2 variants={slider} />
@@ -77,6 +80,9 @@ const Work = styled(motion.div)`
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
+  }
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
   }
 `;
 
