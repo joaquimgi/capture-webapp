@@ -27,7 +27,9 @@ const AboutSection = () => {
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fade}>Contact Us</motion.button>
+        </Link>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="Photographer" />
